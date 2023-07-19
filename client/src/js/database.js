@@ -11,6 +11,7 @@ const initdb = async () =>
       console.log("jate database created");
     },
   });
+  //here are the databases that were used in the assignment.
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
 export const putDb = async (content) => {
@@ -27,6 +28,7 @@ export const putDb = async (content) => {
 };
 
 // TODO: Add logic for a method that gets all the content from the database
+//gets all of the data
 export const getDb = async () => {
   try {
     const jateDb = await openDB('jate',1)

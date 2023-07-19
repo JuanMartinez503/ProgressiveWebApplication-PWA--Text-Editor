@@ -17,6 +17,7 @@ module.exports = () => {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
+    //added the plugins that i will need
     plugins: [
       new HtmlWebpackPlugin({
         template:'./index.html',
@@ -36,6 +37,7 @@ module.exports = () => {
         publicPath:'/',
         icons: [
           {
+            //added the info for my logins.
             src: path.resolve('./src/images/logo.png'),
             sizes: [96,128,192,512],
             destination:path.join('assets','icon')
